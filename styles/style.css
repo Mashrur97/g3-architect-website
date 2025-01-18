@@ -120,15 +120,34 @@ main > section{
 .fact-desc{
   max-width: 540px;
 }
-
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.coms{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.coms > img{
+  filter: grayscale(100%);
+}
 @media screen and (max-width: 576px) {
   .navbar, .navlinks, .teams{
     flex-direction: column;
   }
-  .teamimg{
+  .teamimg, .fact-container, .coms{
     grid-template-columns: repeat(1,1fr);
   }
   .our-feats{
     margin-left: 20px;
+  }
+  .fact-container{
+    justify-items: center;
+    gap: 24px;
+  }
+  .coms{
+    justify-items: center;
+    gap: 24px;
   }
 }
