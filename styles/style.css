@@ -108,6 +108,10 @@ main > section{
    margin-top: 5px;
    margin-bottom: 10px;
 }
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
 .fact-name{
   font-size: 1.25rem;
   font-weight: 600;  
@@ -116,10 +120,7 @@ main > section{
 .fact-desc{
   max-width: 540px;
 }
-.fact-container{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-}
+
 @media screen and (max-width: 576px) {
   .navbar, .navlinks, .teams{
     flex-direction: column;
